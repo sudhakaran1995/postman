@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "9dbeadc7-01c7-43e6-ae46-2c13846615a9",
+		"name": "lokesh",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getgoogle",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c965137f-cde9-4540-a5ec-32f66eed2bda",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"        pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.facebook.com",
+					"protocol": "http",
+					"host": [
+						"www",
+						"facebook",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "goglr",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.google.com?q=mukesh otwan",
+					"protocol": "http",
+					"host": [
+						"www",
+						"google",
+						"com"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "mukesh otwan"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
